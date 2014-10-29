@@ -1,0 +1,386 @@
+/*GENERAL DEFINITIONS*/
+a {
+	text-decoration: none;
+	color: #fff;
+}
+body {
+	/*max-width: 960px;*/
+	margin: 0 auto;
+}
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+.oswald-text {
+	font-family: 'Oswald', sans-serif;
+}
+.roboto-text {
+	font-family: 'Roboto', sans-serif;
+}
+/*GENERAL DEFINITIONS*/
+/*HEADER*/
+
+
+#header {
+	max-width: 680px;
+	margin: 0px auto;
+	text-align: center;
+}
+#header p {
+	font-size: 18px;
+	font-weight: 300;
+	padding: 5px 20px 5px 20px;
+	margin: 10px 0;
+	color: #424242;
+}
+#header p strong {
+	font-weight: 500;
+}
+#SocialContainer {
+	position: fixed;
+	float: left;
+	top: 2%;
+	height: 145px;
+}
+#Facebook {
+	height: 50px;
+	width: 65px;
+	background: #006fca;
+	text-align: right;
+	padding: 5px 10px;
+	font-size: 3em;
+	color: #fff;
+	transition: all 0.3s;
+	margin-left: -15px;
+	margin-top: 2px;
+}
+#Twitter {
+	height: 50px;
+	width: 65px;
+	background: #28aae1;
+	text-align: right;
+	padding: 5px 10px;
+	font-size: 3em;
+	color: #fff;
+	transition: all 0.3s;
+	margin-left: -15px;
+	margin-top: 2px;
+}
+#LinkedIn {
+	height: 50px;
+	width: 65px;
+	background: #136d9d;
+	text-align: right;
+	padding: 5px 10px;
+	font-size: 3em;
+	color: #fff;
+	transition: all 0.3s;
+	margin-left: -15px;
+	margin-top: 2px;
+}
+#Facebook:hover, #Twitter:hover, #LinkedIn:hover {
+	margin-left: 0px;
+}
+/*END: HEADER*/
+/*HRTECH WEBSITES*/
+#event-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 10px 42px 10px;
+	text-align: center;
+}
+.eventtwo-container {
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#logo {
+	margin-top: 20px;
+	height: 90px;
+}
+.event-photo, .event-button {
+	max-width: 270px;
+}
+
+@media (max-width:1024px) {
+#event-container {
+	margin-bottom: 50px;
+}
+}
+.event {
+	max-width: 290px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 15px 20px 30px 20px;
+	display: inline-block;
+}
+.event-title {
+	font-size: 48px;
+	color: #30bfed;
+	line-height: 50px;
+}
+.event-date {
+	font-size: 30px;
+	color: #424242;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+.event-day {
+	letter-spacing: 7px;
+}
+.event-button {
+	font-size: 22px;
+	color: #ffffff;
+	background-color: #5dbcda;
+	padding: 7px 0;
+	margin-top: 0px;
+	width: 100%;
+	position: relative;
+	top: -5px;
+}
+.event-button:hover {
+	color: #ffffff;
+	background-color: #30bfed;
+}
+/*END: HRTECH WEBSITES*/
+/*CONTACT*/
+#contact-container {
+	max-width: 100%;
+	background-color: #06222c;
+	min-height: 500px;
+	-webkit-box-shadow: inset 0px 9px 5px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px 9px 5px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 9px 5px -4px rgba(0, 0, 0, 0.75);
+	text-align: center;
+}
+#contact-header {
+	background-color: #fff;
+	width: 205px;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-box-shadow: 0px 9px 5px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 9px 5px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 9px 5px -2px rgba(0, 0, 0, 0.75);
+	margin: 0 auto;
+}
+#contact-header h2 {
+	font-size: 33px;
+	font-weight: 400;
+	color: #3f3f3f;
+	padding: 0px 0 10px 0;
+}
+.contact {
+	display: inline-block;
+	font-size: 20px;
+	margin: 60px;
+	margin-bottom: 80px;
+}
+
+@media (max-width: 1008px) {
+#contact-container {
+	padding-bottom: 30px;
+}
+.contact {
+	margin: 30px;
+}
+}
+.contact-name {
+	color: #30bfed;
+	margin-top: 30px;
+}
+.contact-jobtitle, .contact-phone {
+	color: #fff;
+	line-height: 32px;
+}
+/*END: CONTACT*/
+/*FOOTER*/
+#footer {
+	max-width: 100%;
+	background-color: #363636;
+	-webkit-box-shadow: inset 0px 5px 5px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px 5px 5px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 5px 5px -4px rgba(0, 0, 0, 0.75);
+	text-align: center;
+}
+#footer h3 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+}
+#footer p {
+	color: #e3e3e3;
+	font-size: 16px;
+	font-weight: 300;
+}
+.footer-item {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+#hrnlogo {
+	margin-top: 50px;
+	margin-left: 0;
+}
+#general-enquiries p {
+	margin-left: 10px;
+	line-height: 24px;
+	color: #e3e3e3;
+}
+#general-enquiries p a {
+	color: #e3e3e3;
+}
+#general-enquiries p i {
+	position: relative;
+	left: -10px;
+}
+#general-enquiries p span {
+	position: relative;
+	left: 19px;
+}
+
+/*END: FOOTER*/
+@media (max-width:1300px) {
+.event-title, .event-date, .event-photo, .event-button {
+	transform: scale(0.7, 0.7)
+}
+#logo {
+	margin-top: 20px;
+	height: 40px;
+}
+.event-photo {
+	position: relative;
+	top: -40px;
+}
+.event-button {
+	position: relative;
+	top: -90px;
+}
+}
+
+@media (max-width:800px) {
+.event-title, .event-date, .event-photo, .event-button {
+	transform: scale(1, 1)
+}
+#logo {
+	margin-top: 10px;
+	height: auto;
+}
+.event-photo {
+	position: inherit;
+}
+.event-button {
+	position: inherit;
+}
+#SocialContainer {
+	display: none;
+}
+}
+
+@media (max-width:720px) {
+.event-title {
+	font-size: 30px;
+	line-height: 30px;
+}
+.event-date {
+	font-size: 28px;
+	color: #424242;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+}
+
+@media (max-width:560px) {
+.footer-item {
+	margin-bottom: 20px;
+	text-align: center;
+}
+#hrnlogo {
+	margin-right: 0;
+}
+#general-enquiries p i {
+	position: relative;
+	left: -10px;
+}
+#general-enquiries p span {
+	position: static;
+}
+}
+
+@media (max-width:545px) {
+.event-title {
+	font-size: 25px;
+	line-height: 25px;
+}
+.event-date {
+	font-size: 22px;
+	color: #424242;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+}
+
+@media (max-width:465px) {
+.event-title {
+	font-size: 20px;
+	line-height: 20px;
+}
+.event-date {
+	font-size: 18px;
+	color: #424242;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+.event-button {
+	font-size: 18px;
+}
+}
+
+@media (max-width:465px) {
+.event-title {
+	font-size: 20px;
+	line-height: 20px;
+}
+.event-date {
+	font-size: 18px;
+	color: #424242;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+.event-button {
+	font-size: 18px;
+}
+}
+
+@media (max-width:395px) {
+.event-title {
+	font-size: 16px;
+	line-height: 20px;
+}
+.event-date {
+	font-size: 13px;
+	color: #424242;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+.event-button {
+	font-size: 16px;
+}
+}
+
+@media (max-width:320px) {
+.event-date {
+	font-size: 11px;
+	color: #424242;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+.event-button {
+	font-size: 13px;
+}
+}
