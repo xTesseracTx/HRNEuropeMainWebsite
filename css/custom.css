@@ -6,6 +6,7 @@ a {
 body {
 	/*max-width: 960px;*/
 	margin: 0 auto;
+	font-size: 10px;
 }
 .img-responsive {
 	width: 100%;
@@ -22,109 +23,126 @@ body {
 
 
 #header {
-	max-width: 680px;
+	max-width: 100%;
 	margin: 0px auto;
 	text-align: center;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#logo {
+	margin-top: 2.5em;
+	margin-bottom: 2em;
 }
 #header p {
-	font-size: 18px;
-	font-weight: 300;
-	padding: 5px 20px 5px 20px;
-	margin: 10px 0;
-	color: #424242;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+	padding: 0px 10px 30px 10px;
+	margin: 0 auto;
+	color: #ffffff;
+	max-width: 960px;
 }
-#header p strong {
-	font-weight: 500;
-}
+
 #SocialContainer {
 	position: fixed;
-	float: left;
-	top: 2%;
-	height: 145px;
+	top: 50%;
 }
 #Facebook {
-	height: 50px;
-	width: 65px;
+	position: fixed;
+	right: 0;
+	height: 40px;
+	width: 50px;
 	background: #006fca;
-	text-align: right;
-	padding: 5px 10px;
+	text-align: left;
 	font-size: 3em;
 	color: #fff;
-	transition: all 0.3s;
-	margin-left: -15px;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-right: -15px;
 	margin-top: 2px;
 }
 #Twitter {
-	height: 50px;
-	width: 65px;
+	position: fixed;
+	right: 0;
+	height: 40px;
+	width: 50px;
 	background: #28aae1;
-	text-align: right;
-	padding: 5px 10px;
+	text-align: left;
 	font-size: 3em;
 	color: #fff;
-	transition: all 0.3s;
-	margin-left: -15px;
-	margin-top: 2px;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-right: -15px;
+	margin-top: 50px;
 }
 #LinkedIn {
-	height: 50px;
-	width: 65px;
+	position: fixed;
+	right: 0;
+	height: 42px;
+	width: 50px;
 	background: #136d9d;
-	text-align: right;
-	padding: 5px 10px;
+	text-align: left;
 	font-size: 3em;
 	color: #fff;
-	transition: all 0.3s;
-	margin-left: -15px;
-	margin-top: 2px;
+	padding-left: 10px;
+	padding-top: 3px;
+	margin-right: -15px;
+	margin-top: 98px;
 }
 #Facebook:hover, #Twitter:hover, #LinkedIn:hover {
-	margin-left: 0px;
+	transition: all 0.3s;
+	right: 15px;
 }
+
 /*END: HEADER*/
 /*HRTECH WEBSITES*/
 #event-container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: no-wrap;
 	justify-content: center;
-	margin: 0 10px 42px 10px;
+	
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: no-wrap;
+	-webkit-justify-content: center;
+	
+	margin: 25px 10px 10px 10px;
 	text-align: center;
 }
+
 .eventtwo-container {
-	display: inline-block;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: no-wrap;
 	justify-content: center;
-}
-#logo {
-	margin-top: 20px;
-	height: 90px;
+	
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: no-wrap;
+	-webkit-justify-content: center;
+
 }
 .event-photo, .event-button {
 	max-width: 270px;
 }
 
-@media (max-width:1024px) {
-#event-container {
-	margin-bottom: 50px;
-}
-}
 .event {
 	max-width: 290px;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 15px 20px 30px 20px;
+	margin: 15px 27px 30px 27px;
 	display: inline-block;
 }
+
 .event-title {
-	font-size: 48px;
+	font-size: 4em;
 	color: #30bfed;
-	line-height: 50px;
+	line-height: 1em;
 }
 .event-date {
-	font-size: 30px;
-	color: #424242;
+	font-size: 2.8em;
+	color: #414141;
 	margin-bottom: 10px;
 	margin-top: 0px;
 }
@@ -132,7 +150,7 @@ body {
 	letter-spacing: 7px;
 }
 .event-button {
-	font-size: 22px;
+	font-size: 1.8em;
 	color: #ffffff;
 	background-color: #5dbcda;
 	padding: 7px 0;
@@ -146,57 +164,7 @@ body {
 	background-color: #30bfed;
 }
 /*END: HRTECH WEBSITES*/
-/*CONTACT*/
-#contact-container {
-	max-width: 100%;
-	background-color: #06222c;
-	min-height: 500px;
-	-webkit-box-shadow: inset 0px 9px 5px -4px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: inset 0px 9px 5px -4px rgba(0, 0, 0, 0.75);
-	box-shadow: inset 0px 9px 5px -4px rgba(0, 0, 0, 0.75);
-	text-align: center;
-}
-#contact-header {
-	background-color: #fff;
-	width: 205px;
-	text-align: center;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	-webkit-box-shadow: 0px 9px 5px -2px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 9px 5px -2px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 9px 5px -2px rgba(0, 0, 0, 0.75);
-	margin: 0 auto;
-}
-#contact-header h2 {
-	font-size: 33px;
-	font-weight: 400;
-	color: #3f3f3f;
-	padding: 0px 0 10px 0;
-}
-.contact {
-	display: inline-block;
-	font-size: 20px;
-	margin: 60px;
-	margin-bottom: 80px;
-}
 
-@media (max-width: 1008px) {
-#contact-container {
-	padding-bottom: 30px;
-}
-.contact {
-	margin: 30px;
-}
-}
-.contact-name {
-	color: #30bfed;
-	margin-top: 30px;
-}
-.contact-jobtitle, .contact-phone {
-	color: #fff;
-	line-height: 32px;
-}
-/*END: CONTACT*/
 /*FOOTER*/
 #footer {
 	max-width: 100%;
@@ -206,181 +174,185 @@ body {
 	box-shadow: inset 0px 5px 5px -4px rgba(0, 0, 0, 0.75);
 	text-align: center;
 }
+#footer-flexcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: center;
+	
+	max-width: 960px;
+	margin: 0 auto;
+}
 #footer h3 {
 	color: #fff;
-	font-size: 18px;
+	font-size: 1.4em;
 	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 #footer p {
 	color: #e3e3e3;
-	font-size: 16px;
+	font-size: 1.4em;
 	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .footer-item {
-	display: inline-block;
 	text-align: left;
-	vertical-align: top;
-	margin-left: 60px;
-	margin-right: 60px;
+	margin: 15px;
 }
 #hrnlogo {
-	margin-top: 50px;
-	margin-left: 0;
+	margin-left: 10px;
 }
 #general-enquiries p {
-	margin-left: 10px;
-	line-height: 24px;
 	color: #e3e3e3;
 }
 #general-enquiries p a {
 	color: #e3e3e3;
 }
-#general-enquiries p i {
-	position: relative;
-	left: -10px;
-}
-#general-enquiries p span {
-	position: relative;
-	left: 19px;
-}
-
-/*END: FOOTER*/
-@media (max-width:1300px) {
-.event-title, .event-date, .event-photo, .event-button {
-	transform: scale(0.7, 0.7)
-}
-#logo {
-	margin-top: 20px;
-	height: 40px;
-}
-.event-photo {
-	position: relative;
-	top: -40px;
-}
-.event-button {
-	position: relative;
-	top: -90px;
-}
-}
-
-@media (max-width:800px) {
-.event-title, .event-date, .event-photo, .event-button {
-	transform: scale(1, 1)
-}
-#logo {
-	margin-top: 10px;
-	height: auto;
-}
-.event-photo {
-	position: inherit;
-}
-.event-button {
-	position: inherit;
-}
-#SocialContainer {
+#footer-socialicons {
 	display: none;
 }
+#socialicons-flexcontainer {
+	display: flex;
+	flex-wrap: no-wrap;
+	justify-content: space-around;
+	
+	display: -webkit-flex;
+	-webkit-flex-wrap: no-wrap;
+	-webkit-justify-content: space-around;	
+}
+.footer-socialicon {
+	width: 40px;
+	height: 40px;
+	margin: 7px;
+	margin-top: 15px;
+}
+#facebook-icon {background-image: url(../img/facebook-icon.svg);}
+#twitter-icon {background-image: url(../img/twitter-icon.svg);}
+#linkedin-icon {background-image: url(../img/linkedin-icon.svg);}
+#slideshare-icon {background-image: url(../img/slideshare-icon.svg);}
+#flickr-icon {background-image: url(../img/flickr-icon.svg);}
+
+/*END: FOOTER*/
+
+
+
+@media (max-width:1125px){
+	.event {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.event-date {
+		font-size: 2.6em;
+	}
 }
 
-@media (max-width:720px) {
-.event-title {
-	font-size: 30px;
-	line-height: 30px;
-}
-.event-date {
-	font-size: 28px;
-	color: #424242;
-	margin-bottom: 10px;
-	margin-top: 0px;
-}
+
+@media (max-width:970px){ /* testing..Change back to 970px! */
+	#event-container {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+	.eventtwo-container {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+	.event {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
-@media (max-width:560px) {
-.footer-item {
-	margin-bottom: 20px;
+@media (max-width:650px){
+	#event-container {
+		flex-wrap: no-wrap;
+		-webkit-flex-wrap: no-wrap;
+		margin: 10px 10px 15px 10px;
+	}
+	.eventtwo-container {
+		
+	}
+	.event {
+		max-width: 135px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.event-title {
+		font-size: 2.5em;
+	}
+	.event-date {
+		font-size: 1.6em;
+	}
+	.event-button {
+		font-size: 1.7em;
+	}
+	#SocialContainer {
+		display: none;
+	}
+	#footer-flexcontainer {
+		max-width: 300px;
+		padding-top: 15px;
+	}
+	.footer-item {
+		text-align: center;
+	}
+	#footer-flexcontainer {
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		-webkit-flex-wrap: wrap;
+		-webkit-justify-content: center;		
+	}
+	#footer-socialicons {
+		display: block;
+	}
+}
+@media (max-width:360px) {
+	.event {
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+}
+
+/*404*/
+#VennOf404 {
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-#hrnlogo {
-	margin-right: 0;
+#VennOf404 h1 {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 5em;
+	font-weight: 400;
 }
-#general-enquiries p i {
-	position: relative;
-	left: -10px;
+#LinkToIndexPage {
+	color:#16AAE1;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 46px;
 }
-#general-enquiries p span {
-	position: static;
+#the-venn-diagram {
+	font-size: 1.7em;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 80px;
 }
+@media (max-width:580px){
+	#VennOf404 h1 {
+		font-size: 3.6em;
+	}
+	#VennOf404 img {
+		width: 100%;
+		height: auto;
+	}
+	#LinkToIndexPage {
+		font-size: 26px;
+		line-height: 36px;
+	}
 }
-
-@media (max-width:545px) {
-.event-title {
-	font-size: 25px;
-	line-height: 25px;
-}
-.event-date {
-	font-size: 22px;
-	color: #424242;
-	margin-bottom: 10px;
-	margin-top: 0px;
-}
-}
-
-@media (max-width:465px) {
-.event-title {
-	font-size: 20px;
-	line-height: 20px;
-}
-.event-date {
-	font-size: 18px;
-	color: #424242;
-	margin-bottom: 3px;
-	margin-top: 0px;
-}
-.event-button {
-	font-size: 18px;
-}
-}
-
-@media (max-width:465px) {
-.event-title {
-	font-size: 20px;
-	line-height: 20px;
-}
-.event-date {
-	font-size: 18px;
-	color: #424242;
-	margin-bottom: 3px;
-	margin-top: 0px;
-}
-.event-button {
-	font-size: 18px;
-}
-}
-
-@media (max-width:395px) {
-.event-title {
-	font-size: 16px;
-	line-height: 20px;
-}
-.event-date {
-	font-size: 13px;
-	color: #424242;
-	margin-bottom: 3px;
-	margin-top: 0px;
-}
-.event-button {
-	font-size: 16px;
-}
-}
-
-@media (max-width:320px) {
-.event-date {
-	font-size: 11px;
-	color: #424242;
-	margin-bottom: 3px;
-	margin-top: 0px;
-}
-.event-button {
-	font-size: 13px;
-}
-}
+/*END 404*/
