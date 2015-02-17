@@ -1,0 +1,398 @@
+@charset "utf-8";
+/* Mainpage CSS definitions | The rules effect only the index.html page */
+
+#VideoHeader {
+	width:100%;
+	height:560px;
+	overflow:hidden;
+	margin:0 auto;
+	margin-top:73px;
+	text-align:center;
+ }
+
+#VideoHeader video{
+height:auto;
+min-width:1920px;
+width:100%;
+margin:0 auto;
+	}
+	
+@media (min-width:1921px) {
+#VideoHeader video {
+min-width:2560px;	
+height:auto;
+margin:0 auto !important;
+	}	
+}
+#HeaderContainer{
+	width:100%;
+	max-width:1920px;
+	max-height:464px;
+	height:100%;
+	background-image:url(../img/mainpage/pattern.png);
+	background-repeat:repeat;
+	background-color:rgba(0,0,0,0.3); 
+	z-index:2;
+	position:absolute;
+	top:78px;
+left:0px;
+text-align:center;
+padding:45px 0 45px 0;
+overflow:hidden;
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
+		}
+
+#HeaderContainer h1 {
+	font-size:60px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+	color:#fff;
+	text-transform:uppercase;
+margin-top:10px;
+	}	 
+#HeaderContainer p {
+	font-size:48px;
+	font-weight:300;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	margin-top:-50px;
+	}	
+@media (max-width:944px) {
+#HeaderContainer p {
+	font-size:40px;
+	}	
+	}	
+@media (max-width:804px) {
+#HeaderContainer p {
+	font-size:36px;
+	}	
+	}	
+
+#HeaderContainer img {
+	margin-top:10px;
+}
+#VideoModalButton {
+	max-height:50px;
+	width:256px;
+	text-align:center;
+	background:rgba(30,102,134,0.7);
+	border:3px solid #29a0c7;
+	font-size:20px;
+	font-weight:300;
+	font-family: 'Roboto', sans-serif;
+	display:inline-block;
+	color:#fff;
+	text-transform:uppercase;
+	padding:12px 0; 
+	margin-left:10px;
+	margin-top:-20px;
+	transition:background 0.3s;
+	}	
+#VideoModalButton:hover {
+	background:#29a0c7;
+	}
+	
+#AboutHRTechContainer {
+background:#29a0c7;
+height:398px;
+width:100%;	
+max-width:1920px;
+margin: 0 auto;
+overflow:hidden;
+	}			
+#AboutHRTechTextContainer{
+	display:inline-block;
+	width:100%;
+	max-width:810px;
+	height:100%;
+	color:#fff;
+	
+	margin-top:7px;
+	padding:100px 50px 50px 50px;
+	}	
+
+#AboutHRTechTextContainer p {
+	font-size:22px;
+	font-weight:300;
+	font-family: 'Roboto', sans-serif;
+	
+    }			
+#AboutHRTechContainer img {
+	margin-top:8px;
+	display:inline-block;
+	height:398px;
+	}
+
+
+@media (max-width:1833px) {
+#AboutHRTechContainer {
+	text-align:center;
+		}	
+	
+#AboutHRTechTextContainer {
+	text-align:center;
+	margin:0 auto;
+	
+	}	
+#AboutHRTechTextContainer h2 {
+    top:20px;	
+	margin:0;
+	}
+#AboutHRTechTextContainer p {
+	top:60px;
+	}			
+#AboutHRTechContainer img {
+	margin-top:-10px;
+	width:100%;
+	height:auto;
+}
+	
+}		
+#MainEventAdvertisingWrapper {
+	max-width:1920px;
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	}
+
+#HRTechEuropeContainer, #HRTechCongressContainer {
+	width:100%;
+	max-width:50%;
+	text-align:center;
+	background:#fff;
+	transition:all 0.5s;
+	color:#404040;
+	height:100%;
+	max-height:526px;
+	overlfow:hidden;
+	margin:0;
+	padding:0;
+	display:inline-block;
+	}
+
+#HRTechEuropeContainer h4, #HRTechCongressContainer  h4 {
+	font-family: 'Oswald', sans-serif;
+	font-weight:400;
+	font-size:42px;
+	text-transform:uppercase;
+	}
+	
+#HRTechEuropeContainer {
+	padding-top:188px;
+	margin-right:-5px;
+	  
+	}	
+#HRTechEuropeLogoContainer {
+	margin:0 auto;
+	max-width:590px;
+	width:100%;
+	height:161px;
+	background:url(../img/mainpage/hrtecheuropelogo.png) no-repeat;
+	background-size:contain;
+	transition:all 0.2s;
+	position:relative;
+	top:-40px;
+	}	
+
+
+#HRTechCongressLogoContainer {
+	width:347px;
+	height:317px;
+	margin:0 auto;
+	background:url(../img/mainpage/hrtechcongresslogo.png) no-repeat;
+	background-size:contain;
+	transition:all 0.2s;	
+	position:relative;
+	top:20px;
+	}
+#HRTechCongressContainer {
+	margin-right:-20px;
+	padding-top:32px;
+	padding-right:15px;
+	border-left:1px solid #404040;
+	
+	}
+	
+#HRTechEuropeContainer:hover {
+	background:url(../img/mainpage/london-bg.png) no-repeat;
+	background-size:cover;
+	color:#FFF;
+	text-shadow:  0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+       
+	}		
+#HRTechEuropeContainer:hover #HRTechEuropeLogoContainer  {
+background:url(../img/mainpage/hrtecheuropelogo-hover.png) repeat right top;
+background-size:cover;
+
+}
+#HRTechCongressContainer:hover {	
+color:#fff;
+background:url(../img/mainpage/paris-bg.png) no-repeat;
+background-size:cover;
+text-shadow:  0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+}
+
+#HRTechCongressContainer:hover #HRTechCongressLogoContainer {
+	background:url(../img/mainpage/hrtechcongresslogo-hover.png);
+	}
+	
+@media (max-width:1833px) {
+#HRTechCongressContainer,  #HRTechEuropeContainer {
+	margin-top:445px;
+    background-size:cover !important;	
+	} 
+	}	
+	
+@media (max-width:1214px) 	{
+#HRTechCongressContainer,  #HRTechEuropeContainer {
+	width:110%;
+	}
+#HRTechEuropeContainer {
+	margin-top:275px;
+	border-bottom:1px solid #404040;	
+	}	
+#HRTechCongressContainer {
+	margin-top:0px;
+	left:-8px;	
+	}	
+	 	
+}
+
+/*PHOTO MONTAGE*/
+.PhotoMontageImg {
+  width: 100%; height: auto;
+}
+#PhotoMontage {
+  display: flex; display: -moz-flex; display: -webkit-flex; 
+  flex-wrap: nowrap; -moz-flex-wrap: nowrap; -webkit-flex-wrap: nowrap;
+  box-sizing: border-box;
+  max-width:1920px;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+
+}
+#LeftGroup, #RightGroup {
+  max-width: 50%;
+  transform: scale(1.038,1.038); -moz-transform: scale(1.038,1.038); -webkit-transform: scale(1.038,1.038);
+  margin-left: 7px;
+}
+@media (max-width: 1366px){
+  #PhotoMontage {
+    transform: scale(1.005,1.005);
+  }
+}
+@media (max-width: 1340px){
+  #PhotoMontage {
+    flex-direction: column; -moz-flex-direction: column; -webkit-flex-direction: column;
+  }
+  #LeftGroup, #RightGroup {
+    max-width: 100% !important;
+       transform: scale(1.04,1.04); -moz-transform: scale(1.04,1.04); -webkit-transform: scale(1.04,1.04);
+  }
+}
+/*END PHOTO MONTAGE*/
+
+/*BLOG*/
+#HRTechBlogWRAPPER {
+	width: 100%;
+	
+}
+#HRTechBlog {
+	padding: 40px 30px 75px 30px;
+	background-image: url(../img/mainpage/blog-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	/*width: 105%;
+	margin-left: -8px;*/
+	color: #fff;
+	background-position: center;
+	background-attachment: fixed;
+}
+#HRTechBlogContainer {
+	margin: 0 auto;
+	max-width: 1370px;
+	display: flex;
+	justify-content: space-between;
+}
+#BlogQuote {
+	width: 635px;
+	height: 307px;
+	background-image: url(../img/mainpage/blog-quote-bg.png);
+	padding-right: 15px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	/*margin: 0 auto;*/
+}
+#BlogQuoteText {
+	font-size: 48px;
+	font-weight: 400;
+	text-align: left;
+	line-height: 60px;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 20px;	
+	max-width: 620px;
+}
+#BlogTextContainer {
+	max-width: 620px;
+	margin-top: 12px;
+	display: inline-block;
+}
+#BlogTextContainer a {
+	text-decoration: none;
+}
+#HRTechBlogTitle {
+	text-align: left;
+	font-size: 60px;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-top: 0;
+	color: #fff;
+}
+#BlogText {
+	font-weight: 300;
+	font-size: 34px;
+	line-height: 40px;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 45px;
+}
+#BlogButton {
+	width: 260px;
+	color: #fff;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid #fff;
+	margin-top: 30px;
+	font-size: 20px;
+	
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	transition: all 0.3s;
+}
+#BlogButton:hover {
+	background-color: #16aae1;
+	border: 2px solid #16aae1;
+}
+@media (max-width:1340px){
+	
+	#BlogQuote, #BlogTextContainer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#HRTechBlogContainer {
+		flex-direction: column;
+	}
+	#BlogTextContainer {
+		width: 580px;
+		padding-left: 120px;
+	}
+}
+/*END BLOG*/

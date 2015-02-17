@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* Navigation menu CSS definitions | The rules effect every page on the mobile website */
+
+.off-canvas-wrap, .inner-wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+#MobileNavigation {
+	position: fixed;
+	background-color: #fff;
+	height: 90px;
+	margin: 0 auto;
+	padding: 9px;
+	width: 100%;
+	z-index: 5000;
+}
+#HRNMenuLogo {
+	float: left;
+}
+.fa-bars {
+	color: #06222c;
+	font-size: 4.8em;
+	float: right;
+	margin-top: 5px;
+	margin-right: 0px;
+}
+.tab-bar {
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	padding: 15px;
+	z-index: 5000;
+	border-bottom: 1px solid #959595;
+}
+.right-off-canvas-menu {
+	background-color: #fff;
+}
+.right-off-canvas-menu {
+	position: fixed;
+}
+#RightsideMobileNavigation ul li{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+#RightsideMobileNavigation ul li a{
+	color: #404041;
+}
+#RightsideMobileNavigation ul li a:hover{
+	border-bottom: 3px solid #404041;
+}
+#FollowUsMobile {
+	font-family: 'Oswald', sans-serif;
+	color: #404041;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}

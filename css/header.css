@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* Header CSS definitions | The rules effect every page on the website */
+
+
+nav {
+	max-height: 100px;
+	width: 100%;
+	max-width:1850px;
+	margin:0 auto !important;
+	padding: 10px 36px 10px 36px;
+	border-bottom: 1px solid #959595;
+	position: fixed;
+	top: 0;
+	left: 0px;
+	right:0;
+	z-index: 100;
+	background: #fff;
+	color: #404040;
+		}
+nav ul {
+	list-style-type: none;
+	display: inline;
+	position: relative;
+	left: -40px;
+	top: 5px;
+	float: left;
+}
+nav img {
+	float: left;
+}
+nav ul li {
+	display: inline;
+	font-family: 'Oswald', sans-serif;
+ font size:20px;
+	font-weight: 400px;
+	text-transform: uppercase;
+	margin-right: 30px;
+	color: #404040;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #404040;
+	border-bottom: 0;
+	transition: all 0.3s;
+}
+nav ul li a:hover {
+	text-decoration: none;
+	color: #29a0c7;
+	border-bottom: 3px solid #29a0c7;
+}
+/* Social Container */
+#SocialContainer {
+	float: right;
+	position: relative;
+	right: 50px;
+	top: 10px;
+}
+#SocialContainer img {
+	margin-right: 2px;
+}
+@media (max-width:1087px) {
+	#SocialContainer {
+		display: none;
+	}
+}
+/* END Social Container*/
+#HeaderModalButton {
+	height: 36px;
+	background: #29a0c7;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 8px 10px 0 10px;
+	margin-left: 10px;
+	transition: background 0.3s;
+}
+#HeaderModalButton:hover {
+	background: #EB1F32;
+}
+
+/* Mobile Navigation*/
+.off-canvas-wrap, .inner-wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+#MobileNavigation {
+	position: fixed;
+	background-color: #fff;
+	height: 90px;
+	margin: 0 auto;
+	padding: 9px;
+	width: 100%;
+	z-index: 5000;
+}
+#HRNMenuLogo {
+	float: left;
+}
+.fa-bars {
+	color: #06222c;
+	font-size: 48px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 5px;
+}
+.tab-bar {
+	box-sizing: border-box;
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	padding: 15px;
+	z-index: 5000;
+	border-bottom: 1px solid #959595;
+	right: 0 !important;
+	display: none;
+}
+.right-off-canvas-menu {
+	background-color: #fff;
+	box-sizing: border-box;
+	position: fixed;
+}
+#RightsideMobileNavigation {
+	border-bottom: none;
+}
+#RightsideMobileNavigation ul{
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: 5px;
+	top: 10px;
+}
+#RightsideMobileNavigation ul li{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	display: block;
+}
+#RightsideMobileNavigation ul li a{
+	color: #404041;
+}
+#RightsideMobileNavigation ul li a:hover{
+	border-bottom: 3px solid #404041;
+}
+#OffCanvasSocialIconsInnerContainer {
+	margin-left: 35px;
+}
+#OffCanvasSocialIcons {
+	width: 100%;
+	margin-left: -38px;
+}
+#OffCanvasSocialIcons img {
+	margin-left: 2px;
+}
+#FollowUsMobile {
+	font-family: 'Oswald', sans-serif;
+	color: #404041;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+@media (max-width: 750px){
+	header { display: none; }
+	.tab-bar { display: block; }
+}
+/* END Mobile Navigation */

@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* Careers CSS definitions | The rules effect only the careers.html page */
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    color: #404040;
+    background-color: #fff;
+}
+body * {
+	box-sizing: content-box;
+}
+
+#TestimonialsContainer *, #CareersContainer * { box-sizing: border-box; }
+
+/* Page Header */ 
+#MainContentContainer {
+	margin-top: 70px;
+}
+header nav ul {
+	top: 21px;
+	left: -18px;
+}
+/* END Page Header */
+
+/* Header Container */
+#HeaderContainer{
+	width:100%;
+	max-height:539px;
+	background-image: url(../img/careers/careers-header-image-background.jpg);
+	background-position:center;
+	background-size:cover;
+	text-align:center;
+	padding:50px 0 65px 0;
+}
+@media (max-width: 580px){
+	#HeaderContainer{
+		padding-bottom: 35px;
+	}
+	#HeaderInnerContainer {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+}
+#HeaderInnerContainer h1 {
+	font-size:60px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+	color:#fff;
+	text-transform:uppercase;
+	margin-top:20px;
+	margin-bottom: 0;
+}
+@media (max-width: 580px){
+	#HeaderInnerContainer h1 {
+		font-size: 40px;
+	}
+}	 
+#HeaderInnerContainer p {
+	font-size:36px;
+	font-weight:300;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+@media (max-width: 580px){
+	#HeaderInnerContainer p {
+		font-size: 24px;
+	}
+}
+/* END Header Container */
+
+/* Colors */
+.CareersColorsContainer {
+	width: 100%;
+}
+.RedStripe, .OrangeStripe, .GreenStripe, .BlueStripe {
+	width:25%;
+	float: left;
+	height:8px;
+	margin: 0;
+}	
+.RedStripe { background:#fc354c; }	
+.OrangeStripe { background:#ff8e2d; }
+.GreenStripe{ background:#8fbe00; }	
+.BlueStripe{ background:#29a0c7; }
+/* END Colors */
+
+/* Photos */
+#PhotoMontageContainer img {
+	width: 100%; 
+	height: auto;
+}
+/* END Photos */
+
+/* Testimonials */
+#TestimonialsContainer {
+	background-color: #06222c;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: -5px;
+}
+@media (max-width: 767px){
+	#TestimonialsInnerContainer{
+		max-width: 600px;
+		padding: 35px 20px 0px 20px;
+	}
+}
+#NavigationArrowContainer { position: relative; }
+@media (max-width: 767px){
+	#NavigationArrowContainer { display: none; }
+}
+.TestimonialsPrev, .TestimonialsNext {
+	position: absolute;
+	transition: all 0.3s; -webkit-transition: all 0.3s;
+}
+.TestimonialsPrev {
+	left: 0;
+	width: 70px;
+	height: 400px;
+	background-image: url(../img/careers/testimonials/arrow-left.png);
+}
+.TestimonialsNext {
+	right: 0;
+	width: 70px;
+	height: 400px;
+	background-image: url(../img/careers/testimonials/arrow-right.png);
+}
+.TestimonialsPrev:hover, .TestimonialsNext:hover {
+	cursor: pointer;
+}
+.TestimonialsPrev:hover { background-image: url(../img/careers/testimonials/arrow-left-hover.png); }
+.TestimonialsNext:hover { background-image: url(../img/careers/testimonials/arrow-right-hover.png); }
+#TestimonialsInnerContainer {
+	width: 100%;
+	max-width: 620px;
+	padding-top: 35px;
+	margin: 0 auto;
+	text-align: center;
+}
+.TestimonialText, .TestimonialAuthor { opacity: 0.8; }
+.TestimonialText {
+	font-weight: 300;
+	font-size: 24px;
+	margin-top: 30px;
+	line-height: 30px;
+}
+@media (max-width: 580px){
+	.TestimonialText {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+.TestimonialAuthor {
+	font-size: 21px;
+}
+@media (max-width: 580px){
+	.TestimonialAuthor {
+		font-size: 16px;
+	}
+}
+.TestimonialAuthor strong {
+	font-weight: 600;
+}
+.Testimonial img {
+	margin: 0 auto;
+	margin-bottom: 17px;
+}
+
+/* END Testimonials */
+
+/* Careers */
+#CareersContainer {
+	background-color: #fff;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+	position: relative;
+	top: -20px;
+}
+@media (max-width: 580px){
+	#CareersContainer {
+		padding-bottom: 30px;
+	}
+}
+#CareersInnerContainer {
+	width: 100%;
+	max-width: 665px;
+	margin: 0 auto;
+}
+@media (max-width: 580px){
+	#CareersInnerContainer {
+		padding: 0 20px;
+	}
+}
+a#CareersApplyNow {
+	position: relative;
+	top: -90px;
+}
+#CareersInnerContainer h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	margin-top: 55px;
+	margin-bottom: 35px;
+}
+@media (max-width: 580px){
+	#CareersInnerContainer h1 {
+		margin-top: 35px;
+		margin-bottom: 15px;
+		font-size: 40px;
+	}
+}
+#CareersInnerContainer p {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 55px;
+}
+@media (max-width: 580px){
+	#CareersInnerContainer p {
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+}
+#CareersInnerContainer .HRNbutton {
+	background-color: #29a0c7;
+	border: 2px solid #29a0c7;
+}
+#CareersInnerContainer .HRNbutton:hover {
+	background-color: #fc354c;
+	border: 2px solid #fc354c;
+}
+/* END Careers */
+
+/* Footer */
+#FooterColorStripes {
+	position: relative; top: 0px;
+}
+
+footer {
+	top: 0px !important;	
+}
+/* END Footer */

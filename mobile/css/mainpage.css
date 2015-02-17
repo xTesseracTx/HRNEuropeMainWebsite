@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/* HEADER*/
+header {
+	margin-top: 90px;
+	background-image: url(../img/header-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 25px 12px 30px 12px;
+	color: #fff;
+}
+#UnleashText {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	color: #fff;
+}
+#FastestGrowingText {
+	font-size: 2.4em;
+	font-weight: 300;
+	margin-top: 5px;
+	color: #fff;
+}
+#HeaderButton {
+	width: 248px;
+	height: 48px;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2em;
+	background-color: rgba(41,160,199,0.63);
+	border: 3px solid #29a0c7;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding-top: 5px;
+	transition: all 0.3s;
+	color: #fff;
+}
+#HeaderButton:hover {
+	background-color: #FC354C;
+	border: 3px solid #FC354C;
+}
+#JoinOurCommunityModal {
+	z-index: 10000;
+}
+/*END HEADER*/
+
+/*INTRO*/
+#Intro {
+	padding: 30px 15px;
+	background-color: #29a0c7;
+}
+#IntroTitle {
+	font-size: 3.2em;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin-bottom: 30px;
+}
+#IntroText {
+	font-size: 2em;
+	font-weight: 300;
+	color: #fff;
+	line-height: 25px;
+}
+#IntroImage {
+	width: 100%;
+}
+/*END INTRO*/
+
+/*HRTECH LONDON AND PARIS*/
+.HRTechEventTitle {
+	color: #404040 !important;
+	text-transform: uppercase;
+	font-size: 2.4em;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#HRTechLondon {
+	padding: 30px 5px;
+	border-bottom: 1px solid #959595;
+	margin-bottom: 25px;
+}
+#HRTechParis {
+	padding-bottom: 30px;
+}
+#HRTechLondon div, #HRTechParis div { /* buttons for HRTech websites */
+	width: 260px;
+	height: 47px;
+	font-weight: 400;
+	font-size: 2em;
+	text-transform: uppercase;
+	background-color: #16aae1;
+	margin: 0 auto;
+	padding-top: 8px;
+	transition: all 0.3s;
+	color: #fff;	
+}
+#HRTechLondon div:hover, #HRTechParis div:hover {
+	background-color: #FC354C;
+}
+#ParisTitle {
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+/*HRTECH LONDON AND PARIS*/
+#HRTechBlog {
+	padding: 30px 30px 40px 30px;
+	background-image: url(../img/blog-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+#HRTechBlogContainer {
+	margin: 0 auto;
+	width: 260px;
+}
+#BlogQuote {
+	width: 256px;
+	height: 178px;
+	background-image: url(../img/blog-quote-bg.png);
+	padding-right: 15px;
+	/*margin: 0 auto;*/
+}
+#BlogQuoteText {
+	font-size: 2.4em;
+	font-weight: 400;
+	text-align: left;
+	padding-top: 70px;
+	max-width: 400px;
+}
+#BlogTextContainer {
+	max-width: 250px;
+	/*margin: 0 auto;*/
+	padding-top: 20px;
+}
+#HRTechBlogTitle {
+	text-align: left;
+	font-size: 3.2em;
+	font-weight: 400;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	color: #fff;
+}
+#BlogText {
+	font-weight: 300;
+	font-size: 2.4em;
+	text-align: left;
+}
+#BlogButton {
+	width: 100%;
+	height: 47px;
+	font-weight: 400;
+	font-size: 2em;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,0);
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-top: 5px;
+	transition: all 0.3s;
+	color: #fff;
+	border: 2px solid #fff;
+	transition: all 0.3s;
+}
+
+#BlogButton:hover {
+	background-color: #16aae1;
+	border: 2px solid #16aae1;
+}
+/*END HRTECH LONDON AND PARIS*/
+
+/*HEADER FORM MODAL*/
+.reveal-modal open {
+	height: auto !important;
+}
+.FormInputFields h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 4.1em;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.FormInputFields input, .FormInputFields textarea {
+	width: 100%;
+	margin-bottom: 25px;
+	padding-left: 15px;
+	font-size: 1.8em;
+	font-weight: 400;
+	height: 55px;
+}
+.FormInputFields textarea {
+	padding-top: 15px;
+}
+.FormInputFields .HRTechButton {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 13px;
+	margin-bottom: 0 !important;
+	padding-left: 32px !important;
+	
+}
+/*END HEADER FORM MODAL*/

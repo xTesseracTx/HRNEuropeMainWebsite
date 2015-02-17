@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* Footer CSS definitions | The rules effect every page on the website */
+
+#FooterColorsContainer {
+    width: 105%;
+	margin:0 auto;
+	margin-top:-8px;
+  
+}
+footer {
+	background-color: #e5e5e5;
+	width: 100% !important;
+	max-width:1920px;
+	text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    top: 7px;
+    margin-bottom:-20px;
+	overflow:hidden;
+}
+
+#FooterContainer {
+	max-width: 1140px;
+	margin: 0 auto;
+        transform: scale(0.95,0.95);
+}
+#FooterTitle {
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	color: #404041;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+	border-bottom: 1px solid #404041;
+}
+#FooterFlexContainer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	
+	display: -moz-flex;
+	-moz-flex-wrap: nowrap;
+	-moz-justify-content: space-between;
+	
+	display: -webkit-flex;
+	-webkit-flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+}
+.FooterItem {
+	color: #404041;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#FooterHRNLogo {
+	margin-top: 70px;
+        width: 100%; height: auto;
+}
+.FooterItem h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+        font-weight: 400;
+}
+.FooterItem p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+}
+#HRNEventsList a {
+    text-decoration: none;
+    color: #404041;
+  transition: all 0.3s
+}
+#HRNEventsList a:hover {
+  color: #16aae1;    
+}
+#FooterCopyrightContainer {
+    display: flex; display: -moz-flex; display: -webkit-flex;
+    justify-content: center; -moz-justify-content: center; -webkit-justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+#Copyright, #Privacy {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #7f7f7f;
+	width: 100%;
+	text-align: center;
+	display: block;
+	text-align: center;
+}
+@media (max-width: 640px){
+    #FooterFlexContainer, #FooterCopyrightContainer {
+	flex-direction: column; -moz-flex-direction: column; -webkit-flex-direction: column;
+    }
+    .FooterItem {
+	margin: 0 auto;
+	text-align: center;
+    }
+    #FooterHRNLogo {
+	width: inherit;
+	margin-top: 40px;
+	margin-bottom: 10px;
+    }
+    #Privacy {
+	margin-top: 0;
+    }
+}

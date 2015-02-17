@@ -1,113 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="keywords" content=" HR Tech Europe, HR Conference" />
-<meta name="description" content="HR Tech Europe 2014 brings together the world's leading HR thinkers and organizations over 2 days in Europe.">
 <meta name="author" content="HRN Europe">
 <meta name="designer" content="Designed by: Judit Bernat - juditbernat.mail@gmail.com ">
-<meta name="developer" content="TesseracT - tesseract@web-developer.hu & Trialshock - trialshock@gmail.com">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HR Tech Europe | Europe's #1 Conference on the Future of HR</title>
+<meta name="developer" content="Developed by: TesseracT - bottyan.tamas@web-developer.hu">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HR Tech Europe 2014 | Europe's #1 Conference on the Future of HR</title>
 
 <!-- Favicon setting -->
 <link rel="shortcut icon" href="favicon.ico">
 
-<!--Google Fonts-->
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<!--Include Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+	
+<link rel="stylesheet" href="css/404.css" />
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-
-<!-- Mobile Social Panel Opener -->
-<script type="text/javascript">
-$(document).click(function (e) {
-    $el = $(e.target);
-    if ($el.hasClass('toggle')) {return false;} 
-    else if ($el.hasClass('mobilesocialicon')) {
-        $(".toggle").toggleClass('opensocial');
-
-    } else {
-        $(".toggle").removeClass('opensocial');
-    }
-});
-
-
-</script>
-<!-- END Mobile Social Panel Opener -->
-
-<!-- 404 REDIRECT -->
 <script type="text/javascript">
 setTimeout(function() {
-  window.location.href = "http://hrtecheurope.com";
+  window.location.href = "http://hrneurope.com";
 }, 10000);
 </script>
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-58396583-1']); /* ID */
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+
 </head>
-
 <body>
-<!-- Floating Social -->
-<div id="SocialContainer">
-<a href="https://www.facebook.com/hrtecheu"><div id="Facebook"><i class="fa fa-facebook"></i></div></a>
-<a href="https://twitter.com/hrtecheurope"><div id="Twitter"><i class="fa fa-twitter"></i></div></a>
-<a href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about"><div id="LinkedIn"><i class="fa fa-linkedin"></i></div></a>
-</div>
-<!-- END Floating Social -->
 
-<!-- 404 -->
-<section id="VennOf404">
-       <h1>Venn of a 404</h1>
-       <img  src="img/404.png" alt="404"></div>
-       <br><br>
-      <div><h2 class="oswald-text"><a href="index" id="LinkToIndexPage">This page does not exist.<br>
-Please take me to the home page.</a><br><br>
-<span style="letter-spacing: 1px; font-size: 18px;">You will be redirected to the main page in 10 seconds.</span>
-</h2></div>
-<p class="roboto-text" id="the-venn-diagram">The Venn Diagram<br>
-Venn diagrams or set diagrams are diagrams that show all hypothetically possible logical relations between a finite collection of sets (groups of things). Venn diagrams were conceived around 1880 by John Venn. They are used in many fields, including set theory, probability, logic, statistics, computer science, and trying to visit web pages that don't exist.</p>
+<section>
+	<div id="ImageContainer">
+		<h1>This page does not exist</h1>
+		<img id="Image404" src="img/404/404.png" alt="Error 404">
+	</div>
+	<h2>You will be redirected to the main page in 10 seconds.</h2>
+	<a href="http://hrneurope.com" target="_parent">
+		<img id="BackButton" src="img/404/back-button.png" alt="<<">
+		<h1>Back to the main page</h1>
+	</a>
 </section>
-<!-- END 404 -->
 
-<!-- FOOTER -->
-<section id="footer" class="roboto-text">
-    <div id="footer-flexcontainer">
-        <div class="footer-item" id="hrnlogo">
-            <img src="img/hrnlogo.png" class="img-responsive" alt="HRN Europe - Pan European HR Network">
-        </div>
-        <div class="footer-item" id="office">
-            <h3>Office</h3>
-            <p>Millenaris Irodahaz<br>
-                Lovohaz utca 39,<br>
-                1024 Budapest, Hungary
-            </p>
-        </div>
-        <div class="footer-item" id="general-enquiries">
-            <h3>General Enquiries</h3>
-            <p><a href="mailto:hrn@hrneurope.com"><i class="fa fa-envelope"></i> hrn@hrneurope.com</a><br>
-                <i class="fa fa-phone"></i> +36 1 201 1469<br>
-                <span>UK & Ireland phone: +44 20 34 689 689</span>
-            </p>
-        </div>
-        <div class="footer-item" id="footer-socialicons">
-            <h3>Follow us</h3>
-            <div id="socialicons-flexcontainer">
-                <a href="https://www.facebook.com/hrtecheu" target="_blank"><div class="footer-socialicon" id="facebook-icon"></div></a>
-                <a href="https://twitter.com/hrtecheurope" target="_blank"><div class="footer-socialicon" id="twitter-icon"></div></a>
-                <a href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about" target="_blank"><div class="footer-socialicon" id="linkedin-icon"></div></a>
-                <a href="http://www.slideshare.net/hrtecheurope" target="_blank"><div class="footer-socialicon" id="slideshare-icon"></div></a>
-                <a href="https://www.flickr.com/photos/hrtecheurope/sets/72157648919068765/" target="_blank"><div class="footer-socialicon" id="flickr-icon"></div></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- FOOTER -->
 
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/412210.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
 
 </body>
 </html>

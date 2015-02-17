@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* General CSS Definitions |The rules effects every page of the website */
+
+
+body {
+		font-family: 'Roboto', sans-serif;
+		color: #404040;
+		padding:0; margin:0 auto;
+		max-width:1920px;
+		overflow-x:hidden;
+	}
+
+a { text-decoration: none; }
+	
+.ColorsContainer {
+width:100%;
+height:10px;	
+margin:0 auto;
+margin-top:-8px;
+
+	}
+.RedStripe, .OrangeStripe, .GreenStripe, .BlueStripe {
+	width:25%;
+	display:inline-block;
+	height:100%;
+	margin:-20px -2px 0 -2px;
+	padding:0;
+	z-index:2;
+	}		
+	
+.RedStripe {
+	background:#fc354c;
+		}	
+.OrangeStripe {
+background:#ff8e2d;	
+	}
+.GreenStripe{
+background:#8fbe00;		
+	}	
+.BlueStripe{
+background:#29a0c7;		
+	}
+        
+.OswaldText {
+         font-family: 'Oswald', sans-serif;
+}
+.RobotoText {
+         font-family: 'Roboto', sans-serif;
+}
+
+.HRNbutton {
+    width: 248px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #1f6688;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 3px solid #29a0c7;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+.HRNbutton:hover{
+    background-color: #29a0c7;
+}
+
+/* Slick Master */
+.slick-dots { /*aligning the carousel dots*/
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+  position: static;
+}
+.slick-dots li button:before { /*change the size of the dots*/
+  font-size: 14px;
+}
+.slick-dots li.slick-active button:before{ /*opacity of the active panel's dot*/
+  color: #fff;
+  opacity: 1;
+}
+.slick-dots li button:before {
+  color: #fff;
+}
+.slick-dots li{ /*defines the GAP between carousel dots*/
+  margin: 0 0px;
+}
+/*END Slick Master*/
+
+/* Modals */
+.reveal-modal {
+	border-radius:0 !important;
+  width: 615px !important;
+}
+.reveal-modal .close-reveal-modal {
+	font-size: 40px !important;
+}
+#JoinOurCommunityModal, #ContactUsModal {
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+#JoinOurCommunityModal *, #ContactUsModal *  {
+  box-sizing: border-box;
+}
+#JoinOurCommunityModal h2, #ContactUsModal h2 {
+  margin-top: 0px;
+  	font-family: 'Oswald', sans-serif;
+	font-size: 41px;
+	font-weight: 400;
+	margin-bottom: 25px;
+      text-align: center;
+}
+.reveal-modal input, .reveal-modal textarea{
+	margin-bottom: 25px;
+	padding: 0 15px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	height: 55px;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.75);
+        border: 1px solid #CCCCCC;
+}
+.reveal-modal textarea {
+	height:110px;
+	padding-top: 10px;
+}
+.submitbutton input:focus{
+	background-color: #FAFAFA;
+	box-shadow: 0 0 5px #999999;
+}
+.submitbutton {
+	padding-top: 13px;
+	text-align: center;
+}
+.HRTechButton {
+	height: 55px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #16aae1;
+	padding: 0px !important;
+	transition: all 0.3s;
+	color: #fff !important;
+        border: none;
+        text-align: center;
+        width: 100% !important;
+        cursor: pointer;
+        margin-bottom: 0 !important;
+}
+.HRTechButton:hover {
+	background-color: #FC354C;
+}
+@media (max-width: 640px){
+                .reveal-modal {
+                           max-width: 100%;
+                           margin: 0 auto;
+                           left: 0;
+                           right: 0;
+                           top: 0;
+                                padding: 15px 20px 20px 20px;    
+                }
+                .reveal-modal h2 {
+                          font-size: 24px;
+                          margin-bottom: 10px;
+                }
+                .reveal-modal p {
+                          font-size: 14px;
+                          margin: 5px 0px 7px 0px;
+                }
+                .reveal-modal input, .reveal-modal textarea {
+                           height: 35px;
+                           font-size: 16px;
+                           padding-left: 10px;
+                           margin-bottom: 10px;
+                }
+                .reveal-modal textarea {
+                            padding-top: 5px;    
+                }
+                .reveal-modal .button {
+                            height: 35px;    
+                }
+                
+}
+
+/*END Modals */
+
+/* Go Top Scroll */
+.GoTopButton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+}
+#GoTopImg{
+    width:70px; 
+    height:70px;
+}
+@media (max-width:580px){
+    .GoTopButton {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+/* END Go Top Scroll */

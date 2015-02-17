@@ -1,0 +1,288 @@
+/*CSS definitions of the THANKYOU section of the page */
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto',sans-serif;
+  font-size: 10px;
+  margin: 0;
+}
+body * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+a {
+  color: #00a8c6;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+a:hover {
+  color: #0078A0;
+}
+h4 {
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Thank You Header */
+#ThankYouHeaderContainer {
+	margin-top: 50px;
+	width: 100%;
+}
+#ThankYouHeaderInnerContainer {
+	width: 100%;
+	padding: 25px;
+	text-align: center;
+}
+#ThankYouHeaderInnerContainer img {
+	margin-bottom: 50px;
+        width: 100%;
+        max-width: 313px;
+        height: auto;
+}
+#ThankYouHeaderInnerContainer h1, #ThankYouHeaderInnerContainer h2 {
+	font-size: 30px;
+}
+#ThankYouHeaderInnerContainer h1 {
+	font-weight: 500;
+	margin-bottom: 100px;
+}
+#ThankYouHeaderInnerContainer h1 span {
+  font-size: 12px;
+  font-weight: 300;
+}
+#ThankYouHeaderInnerContainer h2 {
+	font-weight: 300;
+}
+@media (max-width: 768px){
+	#ThankYouHeaderContainer {
+		margin-top: 10px;
+	}
+	#ThankYouHeaderInnerContainer img {
+		margin-bottom: 10px;
+	}	
+	#ThankYouHeaderInnerContainer h1, #ThankYouHeaderInnerContainer h2 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+/* END Thank You Header */
+
+
+/*Members*/
+#PeterFile, #SteveMic, #ViktoriaCog, #MarcPeople, #ClaireBadge {
+	padding: 40px 50px 10px 50px;
+	background-repeat:no-repeat;
+}
+
+ 
+#PeterFile {
+	background-image:url(../img/contact/file.png);
+}
+
+#SteveMic {
+	background-image:url(../img/contact/microphone.png);
+}
+
+#ViktoriaCog {
+	background-image:url(../img/contact/cog.png);
+}
+
+#MarcPeople {
+	background-image:url(../img/contact/humans.png);
+}
+
+#ClaireBadge {
+	background-image:url(../img/contact/badge.png);
+}
+
+#SteveTitle {
+	color:#fc354c;
+}
+
+#PeterTitle {
+	color:#ff8e2d;
+}
+
+#ViktoriaTitle {
+	color:#8fbe00;
+}
+
+#MarcTitle {
+	color:#56aecf;
+}
+
+#ClaireTitle {
+	color:#fc354c;
+}
+
+
+
+
+/*Members*/
+#ContactMembersContainer {
+    text-align: center;
+	margin: 20px 0 75px 0;
+}
+.ContactMember {
+    margin-bottom: 20px;
+	display:inline-block;
+	margin:10px;
+        font-size: 21px;
+        font-family: 'Oswald', sans-serif;
+}
+.ContactMember p{
+    max-width: 205px;
+    margin: 0 auto;
+    text-align: left;
+	font-size: 1.3rem;
+}
+
+.ContactEmail {
+    font-size: 1.5em;
+}
+
+
+@media(max-width:1400px){
+.ContactMember p{
+    max-width: 200px;
+}
+}
+
+@media (max-width: 768px){
+	#ContactMembersContainer {
+		margin: 0px 0 20px 0;
+	}	
+}
+
+
+/*@medias for some mobile view resizing*/
+@media (max-width:1024px){
+    .ContactMember p{
+        padding-left: 0px;
+    }
+}
+@media (max-width:640px){
+    #Contact {
+        margin-top: 50px;    
+    }
+}
+@media (max-width:480px) {
+    #ContactFormContainer {
+       /* padding-left: 10px;
+        padding-right: 10px;*/
+    }
+    #ContactFormHeader {
+        font-size: 1.8em;
+    }
+    .ContactFormSubscribeButton {
+        float: none;
+        width: 100% !important;
+    }
+    .ContactEmail {
+        font-size: 1.4em;
+    }
+}
+
+
+
+/*Footer*/
+footer {
+	background-color: #e5e5e5;
+	width: 100% !important;
+	text-align: left;
+        box-sizing: border-box;
+        position: relative;
+        top: 5px;
+	margin-bottom:-20px;
+}
+#FooterContainer {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+#FooterTitle {
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	color: #404041;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+	border-bottom: 1px solid #404041;
+}
+#FooterFlexContainer {
+	display: flex; display: -moz-flex; display: -webkit-flex;
+	flex-wrap: nowrap; -moz-flex-wrap: nowrap; -webkit-flex-wrap: nowrap;
+	justify-content: space-between; -moz-justify-content: space-between; -webkit-justify-content: space-between;
+}
+.FooterItem {
+	color: #404041;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#FooterHRNLogo {
+	margin-top: 70px;
+        width: 100%; height: auto;
+}
+.FooterItem h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	margin-bottom: 20px;
+        font-weight: 400;
+}
+.FooterItem p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+}
+#HRNEventsList a {
+  text-decoration: none;
+  color: #404041;
+  transition: all 0.3s
+}
+#HRNEventsList a:hover {
+  color: #16aae1;    
+}
+#FooterCopyrightContainer {
+    display: flex; display: -moz-flex; display: -webkit-flex;
+    justify-content: center; -moz-justify-content: center; -webkit-justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+#Copyright, #Privacy {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #7f7f7f;
+	width: 100%;
+	text-align: center;
+	display: block;
+	text-align: center;
+}
+
+/*Footer mobile view*/
+@media (max-width: 767px){
+    #FooterFlexContainer, #FooterCopyrightContainer {
+	flex-direction: column; -moz-flex-direction: column; -webkit-flex-direction: column;
+    }
+    .FooterItem {
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+    }
+    #FooterHRNLogo {
+	width: 278px;
+	height: 47px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+    }
+    #Privacy {
+	margin-top: 0;
+    }
+}
+/*End Footer mobile view*/
+/*End Footer*/

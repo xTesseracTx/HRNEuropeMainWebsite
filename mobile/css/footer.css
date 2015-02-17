@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* Footer CSS definitions | The rules effect every page on the mobile website */
+
+footer {
+	background-color: #e5e5e5;
+}
+#FooterTitle {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #404040;
+	font-size: 3em;
+	font-weight: 400;
+	color: #404040;
+}
+#FooterContainer {
+	padding: 30px 20px;
+}
+#FooterContainer img {
+	margin-bottom: 25px;
+}
+#FooterContainer h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-weight: 400;
+	color: #404040;
+}
+#FooterContainer p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6em;
+	font-weight: 400;
+	color: #404040;
+	line-height: 19px;
+}
+#HRNEventsList span {
+	font-weight: 400;
+	border-bottom: none;
+	color: #404040;
+	transition: all 0.3s;
+}
+#HRNEventsList a {
+    text-decoration: none;
+    color: #404040;
+    transition: all 0.3s;
+}
+#HRNEventsList a:hover, #HRNEventsList span:hover {
+  color: #16aae1;    
+}
+#Copyright, #Privacy {
+	color: #7f7f7f !important;
+	margin-top: 20px;
+}
+#Copyright { margin-top: 35px;}

@@ -1,142 +1,226 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="keywords" content=" HR Tech Europe, HR Conference" />
-<meta name="description" content="HR Tech Europe 2014 brings together the world's leading HR thinkers and organizations over 2 days in Europe.">
-<meta name="author" content="HRN Europe">
 <meta name="designer" content="Designed by: Judit Bernat - juditbernat.mail@gmail.com ">
-<meta name="developer" content="TesseracT - tesseract@web-developer.hu & Trialshock - trialshock@gmail.com">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HR Tech Europe | Europe's #1 Conference on the Future of HR</title>
+<meta name="developer" content="Developed by: TesseracT - bottyan.tamas@web-developer.hu | Benedek Nagy - trialshock@gmail.com">
+<meta name="author" content="HRN Europe - The Pan European HR Network">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HRN Europe | The Pan European HR Network</title>
 
 <!-- Favicon setting -->
 <link rel="shortcut icon" href="favicon.ico">
 
-<!--Google Fonts-->
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<!-- Include Reveal -->
+<link rel="stylesheet" href="vendor/reveal/reveal.css">
+<script type="text/javascript" src="vendor/reveal/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="vendor/reveal/jquery.reveal.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+<!-- Include Tooltipster -->
+<link rel="stylesheet" type="text/css" href="vendor/tooltipster/css/tooltipster.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+<script type="text/javascript" src="vendor/tooltipster/js/jquery.tooltipster.min.js"></script>
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-    
+<!--Include Font Awesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+<!-- Include General CSS -->
+<link rel="stylesheet" href="css/general.css">
+<!-- Include Mainpage CSS -->
+<link rel="stylesheet" href="css/mainpage.css">
+<!-- Include Header CSS -->
+<link rel="stylesheet" href="css/header.css">
+<!-- Include Footer CSS -->
+<link rel="stylesheet" href="css/footer.css">
 
-<!-- Mobile Social Panel Opener -->
+<!--Include Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+<!-- Conditional Redirect based on Screen width -->
 <script type="text/javascript">
-$(document).click(function (e) {
-    $el = $(e.target);
-    if ($el.hasClass('toggle')) {return false;} 
-    else if ($el.hasClass('mobilesocialicon')) {
-        $(".toggle").toggleClass('opensocial');
-
-    } else {
-        $(".toggle").removeClass('opensocial');
-    }
-});
-
-
+if ( (screen.width < 750)  ) { 
+    window.location = 'http://hrneurope.com/mobile/index.html';
+    } 
 </script>
-<!-- END Mobile Social Panel Opener -->
-    
+<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-58396583-1']); /* ID */
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
-
 <body>
-<!-- HEADER -->
-<section id="header">
-    <img id="logo" src="img/cloud-logo.png" alt="HR Tech Europe">
-    <p style="margin-top:-10px;" class="roboto-text">HR Tech Europe is Europe's most important event on how software, technology systems and collaborative tools are bringing about surmountable change in the way people and organizations work.</p>
-</section>
-
-<!-- END: HEADER -->
-<!-- Floating Social -->
-<div id="SocialContainer">
-<a href="https://www.facebook.com/hrtecheu"><div id="Facebook"><i class="fa fa-facebook"></i></div></a>
-<a href="https://twitter.com/hrtecheurope"><div id="Twitter"><i class="fa fa-twitter"></i></div></a>
-<a href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about"><div id="LinkedIn"><i class="fa fa-linkedin"></i></div></a>
+<!-- Navigation Header -->
+<header>
+  <nav> <a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'LogoHome']);" href="index"><img id="HeaderLion" src="img/header/hrn-lion.png" alt="HRN Lion"></a>
+    <ul>
+      <li></li>
+      <li><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'ExternalForward', 'London']);" href="http://london.hrtecheurope.com">london 2015</a> </li>
+      <li><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'ExternalForward', 'Paris']);" href="http://paris.hrtecheurope.com">paris 2015</a> </li>
+      <li><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'ExternalForward', 'Blog']);" href="http://blog.hrtecheurope.com">blog</a></li>
+      <li><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Careers']);" href="careers">careers</a></li>
+      <li><a onClick="_gaq.push(['_trackEvent', 'Navigation', 'InternalForward', 'Contact']);" href="contact">contact</a></li>
+    </ul>
+    <div id="SocialContainer"> <a onClick="_gaq.push(['_trackEvent', 'HeaderSocial', 'ExternalForward', 'Twitter']);" target="_blank" href="https://twitter.com/hrneurope"><img src="img/header/twitter-bw.png" onmouseover="this.src='img/header/twitter-hover.png';" onmouseout="this.src='img/header/twitter-bw.png';" /></a> <a onClick="_gaq.push(['_trackEvent', 'HeaderSocial', 'ExternalForward', 'LinkedIn']);" target="_blank" href="https://www.linkedin.com/company/hrn-europe---pan-european-hr-network?trk=tyah&trkInfo=tarId%3A1420453121204%2Ctas%3Apan+europe%2Cidx%3A2-1-6"><img src="img/header/linkedin-bw.png" onmouseover="this.src='img/header/linkedin-hover.png';" onmouseout="this.src='img/header/linkedin-bw.png';" /></a> <a onClick="_gaq.push(['_trackEvent', 'HeaderSocial', 'ExternalForward', 'Flickr']);" target="_blank" href="https://www.flickr.com/photos/hrtecheurope/sets/"><img src="img/header/flickr-bw.png" onmouseover="this.src='img/header/flickr-hover.png';" onmouseout="this.src='img/header/flickr-bw.png';" /></a> <a onClick="_gaq.push(['_trackEvent', 'HeaderSocial', 'ExternalForward', 'SlideShare']);" target="_blank" href="http://www.slideshare.net/hrtecheurope"><img src="img/header/slideshare-bw.png" onmouseover="this.src='img/header/slideshare-hover.png';" onmouseout="this.src='img/header/slideshare-bw.png';" /></a> <a onClick="_gaq.push(['_trackEvent', 'HeaderSocial', 'ModalOpen', 'JoinOurCommunity']);" href="#"  data-reveal-id="JoinOurCommunityModal" data-animation="fade">
+      <div id="HeaderModalButton">Join Our Community</div>
+      </a> </a> </div>
+  </nav>
+</header>
+<!--END Navigation Header --> 
+<!-- Video Header -->
+<div id="VideoHeader">
+  <video autoplay loop>
+    <source src="video/hrtech-bg.mp4" type="video/mp4"/>
+  </video>
+  <div id="HeaderContainer"> <img src="img/mainpage/hrn-lion.png" alt="HRN Logo">
+    <h1>unleash your people!</h1>
+    <p>The World's Fastest Growing HR Community</p>
+    <a onClick="_gaq.push(['_trackEvent', 'Header', 'ModalOpen', 'JoinOurCommunity']);" href="#"  data-reveal-id="JoinOurCommunityModal" data-animation="fade">
+    <div id="VideoModalButton">Join Our Community</div>
+    </a> </div>
 </div>
-<!-- END Floating Social -->
+<!-- END Video Header --> 
+<!--COLORS -->
+<div class="ColorsContainer">
+  <div class="RedStripe"></div>
+  <div class="OrangeStripe"></div>
+  <div class="GreenStripe"></div>
+  <div class="BlueStripe"></div>
+</div>
+<!-- END COLORS --> 
+<!-- Text and Photo -->
+<div id="AboutHRTechContainer">
 
-<!-- HRTECH WEBSITES -->
-<section id="event-container">
-<div class="eventtwo-container">
-    <!-- London -->
-    <a href="http://london.hrtecheurope.com"><div class="event">
-        <div class="event-title oswald-text">London</div>
-        <div class="event-date oswald-text">2<span class="event-day">4-</span>25 March 2015</div>
-        <div class="event-photo"><img class="img-responsive" src="img/london.jpg" alt="HR Tech London"></div>
-        <div class="event-button roboto-text">Visit website</div>
-    </div></a>
-    <!-- END: London -->
-    <!-- Amsterdam -->
-    <a href="http://amsterdam.hrtecheurope.com"><div class="event">
-        <div class="event-title oswald-text">Amsterdam</div>
-        <div class="event-date oswald-text">6 May 2015</div>
-        <div class="event-photo"><img class="img-responsive" src="img/amsterdam.jpg" alt="HR Tech Amsterdam"></div>
-        <div class="event-button roboto-text">Visit website</div>
-    </div></a>
-    <!-- END: Amsterdam -->    
-    </div><div class="eventtwo-container">
-     <!-- London -->
-    <a href="http://paris.hrtecheurope.com"><div class="event">
-        <div class="event-title oswald-text">Paris</div>
-        <div class="event-date oswald-text">2<span class="event-day">7-</span>28 Oct 2015</div>
-        <div class="event-photo"><img class="img-responsive" src="img/paris.jpg" alt="HR Tech London"></div>
-        <div class="event-button roboto-text">Visit website</div>
-    </div></a>
-    <!-- END: London -->
-    
-    <!-- Blog -->
-    <a href="http://blog.hrtecheurope.com"><div class="event">
-        <div class="event-title oswald-text">Blog</div>
-        <div class="event-date oswald-text">HR Tech Europe</div>
-        <div class="event-photo"><img class="img-responsive" src="img/blog.jpg" alt="HR Tech Europe Blog"></div>
-        <div class="event-button roboto-text">Visit website</div>
-    </div></a>
-    <!-- END: Blog -->
+  <div id="AboutHRTechTextContainer">
+    <p>As the Pan European HR Network we are interested in the Future of Work. <br>
+      <br>
+      We collaborate with market leaders and disrupters on how communities, leadership, deliberate practice, process modelling, decision science, software, technology systems and collaborative tools are bringing about surmountable change in the way people and organizations work.</p>
+  </div>
+  <div id="AboutHRTechPicture" style="background:url(img/mainpage/about-img.jpg); background-size:cover; height:100%; width:100%; max-width:993px; float:right; margin-top:7px;"></div>
+  </div>
+
+<!-- END Text and Photo --> 
+<!-- Event Advertising --> 
+<div id="MainEventAdvertisingWrapper">
+<a onClick="_gaq.push(['_trackEvent', 'GeneralButton', 'ExternalForward', 'London']);" href="http://london.hrtecheurope.com">
+<div id="HRTechEuropeContainer">
+  <div id="HRTechEuropeLogoContainer"></div>
+  <h4>24 - 25 march 2015 | london</h4>
+</div>
+</a> <a onClick="_gaq.push(['_trackEvent', 'GeneralButton', 'ExternalForward', 'Paris']);" href="http://paris.hrtecheurope.com">
+<div id="HRTechCongressContainer">
+  <div id="HRTechCongressLogoContainer"></div>
+  <h4>27 - 28 october 2015 | Paris</h4>
+</div>
+</a> 
+</div>
+<!-- END Event Advertising --> 
+
+<!-- Photo Montage -->
+<div id="PhotoMontage">
+  <div id="LeftGroup"> <img class="PhotoMontageImg" src="img/mainpage/photo-montage/left-photo.jpg" alt="HRN Europe"> </div>
+  <div id="RightGroup"> <img class="PhotoMontageImg" src="img/mainpage/photo-montage/right-photo.jpg" alt="HR Tech Europe"> </div>
+  <div style="clear: both;"></div>
+</div>
+<!-- END Photo Montage --> 
+
+<!-- Blog -->
+<div id="HRTechBlogWRAPPER">
+  <div id="HRTechBlog">
+    <div id="HRTechBlogContainer">
+      <div id="BlogQuote">
+        <p id="BlogQuoteText">Technology is going to Revolutionize the Future of Work!</p>
+      </div>
+      <div id="BlogTextContainer">
+        <h1 id="HRTechBlogTitle" class="OswaldText">HR TECH BLOG</h1>
+        <p id="BlogText">News and Opinion from the Fastest Growing HR Community in the World.</p>
+        <a onClick="_gaq.push(['_trackEvent', 'GeneralButton', 'ExternalForward', 'Blog']);" href="http://blog.hrtecheurope.com" target="_blank">
+        <div id="BlogButton">Visit Blog</div>
+        </a> </div>
     </div>
-</section>
-<!-- END: HRTECH WEBSITES -->
-
-<!-- FOOTER -->
-<section id="footer" class="roboto-text">
-    <div id="footer-flexcontainer">
-        <div class="footer-item" id="hrnlogo">
-            <img src="img/hrnlogo.svg" alt="HRN Europe - Pan European HR Network">
-        </div>
-        <div class="footer-item" id="office">
-            <h3>Office</h3>
-            <p>Millenaris Irodahaz<br>
-                Lovohaz utca 39,<br>
-                1024 Budapest, Hungary
-            </p>
-        </div>
-        <div class="footer-item" id="general-enquiries">
-            <h3>General Enquiries</h3>
-            <p><a href="mailto:hrn@hrneurope.com"><i class="fa fa-envelope"></i> hrn@hrneurope.com</a><br>
-                <i class="fa fa-phone"></i> +36 1 201 1469<br>
-                <span>UK & Ireland phone: +44 20 34 689 689</span>
-            </p>
-        </div>
-        <div class="footer-item" id="footer-socialicons">
-            <h3>Follow us</h3>
-            <div id="socialicons-flexcontainer">
-                <a href="https://www.facebook.com/hrtecheu" target="_blank"><div class="footer-socialicon" id="facebook-icon"></div></a>
-                <a href="https://twitter.com/hrtecheurope" target="_blank"><div class="footer-socialicon" id="twitter-icon"></div></a>
-                <a href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about" target="_blank"><div class="footer-socialicon" id="linkedin-icon"></div></a>
-                <a href="http://www.slideshare.net/hrtecheurope" target="_blank"><div class="footer-socialicon" id="slideshare-icon"></div></a>
-                <a href="https://www.flickr.com/photos/hrtecheurope/sets/72157648919068765/" target="_blank"><div class="footer-socialicon" id="flickr-icon"></div></a>
-            </div>
-        </div>
+  </div>
+</div>
+<!-- END Blog --> 
+<!--COLORS -->
+<div class="ColorsContainer" id="FooterColorsContainer">
+  <div class="RedStripe"></div>
+  <div class="OrangeStripe"></div>
+  <div class="GreenStripe"></div>
+  <div class="BlueStripe"></div>
+</div>
+<!-- END COLORS -->
+<footer>
+  <div id="FooterContainer">
+    <h2 id="FooterTitle">Contact</h2>
+    <div id="FooterFlexContainer">
+      <div class="FooterItem"><a onClick="_gaq.push(['_trackEvent', 'Footer', 'InternalForward', 'LogoHome']);" href="index"> <img id="FooterHRNLogo" src="img/footer/footer-hrn-logo.png" alt="HRN Logo"> </a></div>
+      <div class="FooterItem" id="HRNEventsList">
+        <h3>HRN Events</h3>
+        <p><a onClick="_gaq.push(['_trackEvent', 'Footer', 'ExternalForward', 'London']);" href="http://london.hrtecheurope.com">HR Tech Europe</a><br>
+          <a onClick="_gaq.push(['_trackEvent', 'Footer', 'ExternalForward', 'Paris']);" href="http://paris.hrtecheurope.com">HR Tech World Congress</a><br>
+          <a href="#" class="tooltip" title="The website is under construction. Please check back later! ">iRecruit Expo</a> </p>
+      </div>
+      <div class="FooterItem">
+        <h3>Office</h3>
+        <p>Millenaris Irodahaz<br>
+          Lovohaz utca 39,<br>
+          1024 Budapest, Hungary </p>
+      </div>
+      <div class="FooterItem">
+        <h3>General Inquiries</h3>
+        <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;hrn@hrneurope.com<br>
+          <i class="fa fa-phone"></i>&nbsp;&nbsp;+36 1 201 1469<br>
+          UK &amp; Ireland phone: +44 20 34 689 689 </p>
+      </div>
     </div>
-</section>
-<!-- FOOTER -->
+    <p id="Copyright">Copyright &#169; 2014 HRN Europe. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy  I  Terms and Conditions</p>
+  </div>
+</footer>
 
+<!-- JOIN OUR COMMUNITY MODAL -->
+<div id="JoinOurCommunityModal" class="reveal-modal" data-reveal> <a class="close-reveal-modal">&#215;</a>
+  <h2>JOIN OUR COMMUNITY</h2>
+    <!-- BEGINNING of : JOIN OUR COMMUNITY FORM -->  
+    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type=hidden name="oid" value="00DD0000000nwgk">
+        <input type=hidden name="retURL" value="http://hrneurope.com/thankyou">
+        <input required placeholder="First Name *"  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+        <input required placeholder="Last Name *" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+        <input required placeholder="Email Address *" id="email" maxlength="80" name="email" size="20" type="text" />
+        <input required placeholder="Phone Number *" id="phone" maxlength="40" name="phone" size="20" type="text" />
+        <input required placeholder="Company *" id="company" maxlength="40" name="company" size="20" type="text" />
+        <input required placeholder="Job Title *" id="title" maxlength="40" name="title" size="20" type="text" />
+        <select style="display:none;"   id="lead_source" name="lead_source" placeholder="Lead Source"><option selected="selected" value="HRNWebsite-JoinOurCommunity">HRNWebsite-JoinOurCommunity</option>
+                      </select>
+        <input onClick="_gaq.push(['_trackEvent', 'JoinOurCommunityForm', 'FromSubmission', 'InquirySent']);" class="submitbutton HRTechButton" type="submit" name="submit" value="Send">
+  </form>
+  <!-- END of : JOIN OUR COMMUNITY FORM -->
+</div>
+<!-- END JOIN OUR COMMUNITY MODAL --> 
+
+<!-- Start of Async HubSpot Analytics Code --> 
+<script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/412210.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script> 
+<!-- End of Async HubSpot Analytics Code -->
 
 </body>
 </html>

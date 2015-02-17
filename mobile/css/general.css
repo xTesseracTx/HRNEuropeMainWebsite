@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* General CSS definitions | The rules effect every page on the mobile website */
+
+/* General Definitions*/
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size:10px;
+	max-width: 767px;
+	margin: 0 auto;
+	text-align: center;
+}
+body * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	padding-top: 20px;
+}
+.OswaldText {
+  font-family: 'Oswald', sans-serif;
+}
+.ResponsiveImage {
+	width: 100%;
+	height: auto;
+}
+
+/*END  General Definitions*/
+
+/*Colors*/
+.colors-wrapper {
+width:100%;	
+	}	
+.colored-stripe{
+	height:8px;
+	width:25%;
+	float: left;
+	}	
+
+.red {
+	background:#FC354C;
+	}	
+
+.blue {
+	background:#29A0C7;
+	
+	} 
+.yellow{
+	background:#FF8E2D;
+	}
+.green {
+	background:#8FBE00;
+	}			
+/* End Colors*/
